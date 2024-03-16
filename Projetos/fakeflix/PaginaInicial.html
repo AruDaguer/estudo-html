@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>FakeFlix</title>
 
     <style>
         * {
@@ -14,87 +14,109 @@
         
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: #262626;
             color: #fff;
-            padding-top: 60px;
-            margin-bottom: 50px; 
         }
 
-        .div {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.8);
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .logo {
-            float: left;
             font-size: 40px;
             text-transform: uppercase;
-            color: #b0070f;
+            color: rgb(170, 8, 8);
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
         }
 
         .botao {
-            float: right;
-            background-color: #b0070f;
-            color: #fff;
-            border: none;
             padding: 10px 20px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
-            cursor: pointer;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .botao-entrar {
+            background-color: rgb(170, 8, 8);
+            color: #fff;
+        }
+
+        .botao-criar-conta {
+            background-color: #2f2f2f;
+            color: #fff;
+            border: 1px solid #fff;
         }
 
         .botao:hover {
-            background-color: #b0070f;
+            background-color: #771919;
         }
 
-        hr {
-            border: none;
-            border-top: 1px solid #fff;
-            margin-top: 30px; 
-            margin-bottom: 20px; 
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
 
-        footer {
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        footer p {
+        .filme {
+            width: 200px;
+            height: 300px;
+            background-color: #333;
             color: #fff;
+            border-radius: 5px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="div">
-            <h1 class="logo"><b>FakeFlix</b></h1>
-            <button class="botao">Entrar</button>
+    <div class="container">
+        <h1 class="logo">FakeFlix</h1>
+        <div class="botoes">
+            <button class="botao botao-entrar">Entrar</button>
+            <button class="botao botao-criar-conta">Criar Conta</button>
         </div>
-    </header> 
-
-    <div class="div">
- 
     </div>
 
-    <footer>
-        <hr> 
-        <p>© 2024 FakeFlix</p>
-    </footer>
+    <div class="catalogo">
+        <div class="filme">
+            Filme 1
+        </div>
+        <div class="filme">
+            Filme 2
+        </div>
+        <div class="filme">
+            Filme 3
+        </div>
+        <div class="filme">
+            Filme 4
+        </div>
+        <div class="filme">
+            Filme 5
+        </div>
+        <div class="filme">
+            Filme 6
+        </div>
+        <div class="filme">
+            Filme 7
+        </div>
+        <div class="filme">
+            Filme 8
+        </div>
+    </div>
 </body>
 </html>

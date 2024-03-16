@@ -3,17 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta</title>
+    <title>Entrar</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logo {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: rgb(170, 8, 8);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .entrar {
+            font-size: 30px;
+            color: rgb(228, 225, 225);
+            margin-bottom: 30px;
+
+        }
+
+        .container{
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .campo {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: rgb(50, 50, 50);
+            color: white;
+
+        }
+
+        .botao {
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgb(170, 8, 8);
+            color: white;
+            cursor: pointer;
+
+        }
+        
+        .botao:hover {
+            background-color: #771919;
+        }
+
+        .links {
+            font-size: 15px;
+            color: rgb(228, 225, 225);
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .links a {
+            display: block;
+            color: rgb(141, 141, 141);
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
+
 <body>
     <div class="container">
         <h1 class="logo">Fakeflix</h1>
+        <h2 class="entrar">Entrar</h2>
 
         <form>
-            <input type="text" placeholder="Endereço de e-mail">
-            <input type="password" placeholder="Senha">
-            <input type="submit" value="Entrar">
+            <input type="text" class="campo" placeholder="Endereço de e-mail">
+            <input type="password" class="campo" placeholder="Senha">
+            <input type="submit" class="botao" value="Entrar">
         </form>
+
+        <div class="links">
+            <a href="#">Esqueceu a senha?</a>
+            <span>ou</span>
+            <a href="file:///C:/Users/lauri/OneDrive/Área%20de%20Trabalho/estudo-js/estudo-html/projetos/fakeflix/CriarConta.html">Não tem uma conta? Crie uma agora</a> 
+        </div>
     </div>
 </body>
 </html>
