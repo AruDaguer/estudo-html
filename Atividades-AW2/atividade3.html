@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Semanal - Laura Daguer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('https://www.frizero.com.br/wp-content/uploads/2021/02/mao-feminina-com-lapis-escrevendo-no-caderno-mulher-com-lapis-escrevendo-no-caderno-na-cafeteria_1627-779.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .agenda-container {
+            background-color: white;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(255, 255, 255, 0.539);
+            border: 1px solid #e0d9cc;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #5a4a42;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e0d9cc;
+            padding-bottom: 15px;
+        }
+        
+        h4 {
+            text-align: center;
+            color: #7a6b62;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+        }
+        
+        th, td {
+            padding: 14px 10px;
+            text-align: center;
+            border: 1px solid #e0d9cc;
+        }
+        
+        th {
+            background-color: #f5f1e8;
+            color: #5a4a42;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.3px;
+        }
+        
+        td:first-child {
+            background-color: #f9f7f2;
+            font-weight: 600;
+            color: #5a4a42;
+        }
+        
+        .cursinho {
+            background-color: #f0f3e8;
+            color: #5a6a42;
+        }
+        
+        .ballet {
+            background-color: #f0e8e8;
+            color: #6a4242;
+        }
+        
+        .academia {
+            background-color: #e8f0e8;
+            color: #425a42;
+        }
+        
+        .estagio {
+            background-color: #e8e8f0;
+            color: #42426a;
+        }
+        
+        .aulas {
+            background-color: #f0e8f0;
+            color: #5a425a;
+        }
+        
+        @media (max-width: 768px) {
+            .agenda-container {
+                padding: 25px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            h4 {
+                font-size: 1rem;
+            }
+            
+            th, td {
+                padding: 10px 6px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="agenda-container">
+            <h1>Planejamento semanal - Laura Daguer</h1>
+            <h4>Em minha agenda semanal tem todas as atividades que eu realizo</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>HORA</th>
+                        <th>SEGUNDA</th>
+                        <th>TERÇA</th>
+                        <th>QUARTA</th>
+                        <th>QUINTA</th>
+                        <th>SEXTA</th>
+                        <th>SÁBADO</th>
+                        <th>DOMINGO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 8H -->
+                    <tr>
+                        <td>8H</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="academia">ACADEMIA</td>
+                        <td></td>
+                    </tr>
+                    <!-- 9H -->
+                    <tr>
+                        <td>9H</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="academia">ACADEMIA</td>
+                        <td></td>
+                    </tr>
+                    <!-- 10H -->
+                    <tr>
+                        <td>10H</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                    </tr>
+                    <!-- 11H -->
+                    <tr>
+                        <td>11H</td>
+                        <td></td>
+                        <td class="academia">ACADEMIA</td>
+                        <td class="ballet">BALLET</td>
+                        <td class="academia">ACADEMIA</td>
+                        <td class="ballet">BALLET</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                    </tr>
+                    <!-- 12H -->
+                    <tr>
+                        <td>12H</td>
+                        <td></td>
+                        <td class="academia">ACADEMIA</td>
+                        <td class="ballet">BALLET</td>
+                        <td class="academia">ACADEMIA</td>
+                        <td class="ballet">BALLET</td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                    </tr>
+                    <!-- 13H -->
+                    <tr>
+                        <td>13H</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="cursinho">CURSINHO</td>
+                        <td></td>
+                    </tr>
+                    <!-- 14H -->
+                    <tr>
+                        <td>14H</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 15H -->
+                    <tr>
+                        <td>15H</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 16H -->
+                    <tr>
+                        <td>16H</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 17H -->
+                    <tr>
+                        <td>17H</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td class="estagio">ESTÁGIO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 18H -->
+                    <tr>
+                        <td>18H</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 19H -->
+                    <tr>
+                        <td>19H</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 20H -->
+                    <tr>
+                        <td>20H</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 21H -->
+                    <tr>
+                        <td>21H</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 22H -->
+                    <tr>
+                        <td>22H</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td class="aulas">AULAS</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
