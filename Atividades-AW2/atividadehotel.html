@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burj Al Arab - O Hotel Mais Luxuoso de Dubai</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2017/08/10/16/11/burj-al-arab-2624317_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-style: italic;
+            color: #f8f8f8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-top: 4px solid #0056b3;
+        }
+        
+        h2 {
+            color: #0056b3;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            width: calc(25% - 12px);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .btn {
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .btn:hover {
+            background-color: #004494;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Burj Al Arab</h1>
+        <p>O símbolo máximo de luxo em Dubai</p>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Sobre o Hotel</h2>
+            <p>O Burj Al Arab é reconhecido como o único hotel 7 estrelas do mundo, tornando-se um ícone arquitetônico de Dubai. Com sua impressionante estrutura em forma de vela de barco, o hotel se ergue em uma ilha artificial a 280 metros da costa.</p>
+            
+            <p>Inaugurado em 1999, o Burj Al Arab oferece 202 suítes luxuosas, cada uma com vista para o mar, decoradas com ouro e mármore. O hotel conta com serviço de mordomo 24 horas, uma frota de Rolls-Royce para transporte dos hóspedes e o famoso restaurante submarino Al Mahara.</p>
+            
+            <div class="gallery">
+                <img src="https://cdn.pixabay.com/photo/2017/08/10/16/11/burj-al-arab-2624317_1280.jpg" alt="Burj Al Arab vista externa">
+                <img src="https://robbreport.com/wp-content/uploads/2018/02/burj-al-arab-jacuzzi.jpg?w=1000" alt="Interior luxuoso">
+                <img src="https://www.kayak.com.br/rimg/himg/28/2e/7a/leonardo-12863-177477214-219419.jpg?width=836&height=607&crop=true" alt="Suíte real">
+                <img src="https://mesvacancesadubai.com/wp-content/uploads/2020/12/burj-al-arab-presentation-.jpg" alt="Restaurante submarino">
+            </div>
+            
+            <a href="https://www.jumeirah.com/en/stay/dubai/burj-al-arab" class="btn">Visite o Site Oficial</a>
+        </div>
+        
+        <div class="section">
+            <h2>Localização</h2>
+            <p>O Burj Al Arab está localizado em uma ilha artificial a cerca de 280 metros da praia de Jumeirah, em Dubai, Emirados Árabes Unidos.</p>
+            
+            <p>Endereço: Jumeirah St - Umm Suqeim 3 - Dubai - Emirados Árabes Unidos</p>
+            
+            <div style="width: 100%; height: 400px; margin-top: 20px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178509744284!2d55.1836908!3d25.1415573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6a576414cf2d%3A0xb3da71b879f0e038!2sBurj%20Al%20Arab!5e0!3m2!1spt-BR!2sbr!4v1714320000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Conheça o Burj Al Arab</h2>
+            <p>Assista a este vídeo para conhecer mais sobre a experiência única que o Burj Al Arab oferece:</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-46gWxV-_bs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
