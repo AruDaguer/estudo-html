@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie - The Last of Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images7.alphacoders.com/132/thumb-1920-1326068.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .resumo {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: rgba(30, 30, 30, 0.85);
+            border-left: 4px solid #5c1a1a;
+            line-height: 1.6;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            opacity: 0.8;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+        }
+
+        .cartao img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+            border-radius: 12px;
+        }
+
+        .cartao:hover {
+            opacity: 1;
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .cartao:hover img {
+            transform: scale(1.1);
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .galeria {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1rem;
+                padding: 1rem;
+            }
+            
+            .resumo {
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 8px;
+            }
+            
+            .cartao {
+                height: 250px;
+                border-radius: 10px;
+            }
+            
+            .cartao img {
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resumo">
+        <h2>The Last of Us</h2>
+        <p>Ambientado em um mundo pós-apocalíptico devastado por uma infecção por fungos, The Last of Us segue a jornada de Ellie, uma jovem imune ao vírus, e Joel, um sobrevivente endurecido. Juntos, eles atravessam os Estados Unidos em uma emocionante história de sobrevivência, perda e esperança. A franquia se destaca por sua narrativa profunda e personagens complexos.</p>
+    </div>
+
+    <div class="galeria">
+        <div class="cartao">
+            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/05/mega_Ellie_Still_VignetteV1_e2a35f.jpg?w=2995">
+        </div>
+        <div class="cartao">
+            <img src="https://static.wikia.nocookie.net/thelastofus/images/4/4a/S1E9_Joel_1.jpg/revision/latest/scale-to-width-down/1920?cb=20230308225508">
+        </div>
+        <div class="cartao">
+            <img src="https://static.wikia.nocookie.net/thelastofus/images/9/9e/S2_Dina_teaser_trailer_2.png/revision/latest/scale-to-width-down/250?cb=20250124180338">
+        </div>
+        <div class="cartao">
+            <img src="https://static.wikia.nocookie.net/thelastofus/images/1/1d/Part_II_Ellie_infobox.webp/revision/latest?cb=20230216184025&path-prefix=pt-br">
+        </div>
+        <div class="cartao">
+            <img src="https://static.wikia.nocookie.net/thelastofus/images/d/d1/Part_I_Joel_infobox.png/revision/latest/scale-to-width/360?cb=20230215182931">
+        </div>
+        <div class="cartao">
+            <img src="https://static.wikia.nocookie.net/thelastofus/images/c/c7/Dina_Seattle_close_up.png/revision/latest/scale-to-width-down/1200?cb=20230307144402&path-prefix=es">
+        </div>
+    </div>
+</body>
+</html>
